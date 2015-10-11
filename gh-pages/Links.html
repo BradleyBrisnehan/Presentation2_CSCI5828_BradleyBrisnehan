@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    a:link
+    {
+       color:white
+    }
+    a:visited
+    {
+       color:white
+    }
+
+    img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    #header
+    {
+       font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+       color:white;
+       text-align:center;
+       padding:5px;
+    }
+    #nav
+    {
+       font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+       line-height:30px;
+       color:white;
+       width:225px;
+       height:550px;
+       float:left;
+       padding:5px;
+    }
+    #section
+    {
+       font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+       color:white;
+       width:1000px;
+       float:left;
+       padding:10px;
+    }
+    #footer
+    {
+       font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+       font-style: italic;
+       color:white;
+       clear:both;
+       text-align:center;
+       padding:5px;
+    }
+  </style>
+</head>
+
+<body bgcolor="#4a525a">
+  <div id="header">
+     <h1>IBM Rational DOORS</h1>
+  </div>
+
+  <div id="nav">
+     <h><u><b>Table of Contents:</b></u></h>
+     <p>
+        1.  <a href="Intro.html">Introduction</a><br>
+        2.  <a href="Requirements.html">Requirements</a><br>
+        3.  <a href="Modules.html">Modules</a><br>
+        4.  <a href="Links.html">Links</a><br>
+        5.  <a href="Tracking.html">Change Tracking</a><br>
+        6.  <a href="Together.html">Putting It Together</a><br>
+        7.  <a href="Users.html">Users</a><br>
+        8.  <a href="Views.html">Views</a><br>
+        9.  <a href="Trial.html">Trial Download</a><br>
+        10.  <a href="Tutorial.html">Basic Tutorial</a><br>
+        11.  <a href="Conclusion.html">Conclusion</a><br>
+        <br>
+        <a href="References.html">References</a><br>
+     </p>
+  </div>
+
+  <div id="section">
+     <h2>Links</h2>
+     <p>
+        With modules containing Attributes and Objects, DOORS then allows links among Objects within each module.  This allows a Test Plan Object to be linked to a Design Object, the Design Object to be linked to a System Requirement Object, and a System Requirement Object to be linked to a user requirement.  Links can be used to track relations in both directions (User Requirements to System Requirements, and vice versa).  This functionality facilitates the following improvements in productivity:
+     </p>
+     <ul>
+        <li><b>Failure of Test Plan:</b> If an Object in the Test Plan module fails, the designers can quickly identify the User Requirement which will not be met.  This may result in a user review to re-evaluate reuirement, a review of the test to better assess the requirement, or a review of the design.</li>
+        <li><b>Over Testing:</b> If an Object in the Test Plan module cannot be linked through a Design Object to a System Requirement Object, then that test is not necessary.  This will eliminate the desire to exhaustively test functionality which has already been verified elsewhere.</li>
+        <li><b>Design Scope Creep:</b> If an Object in the Design module cannot be linked to a System Requirement then the fucntionality is "nice to have" but will cost time and money without satisfying user needs.</li>
+        <li><b>Inadequate Design:</b> If an Object in the System Requirement module cannot be linked to a Design Object then we will not meet that requirement.  Re-evaluation of the design and User Requirements must be initiated.</li>
+        <li><b>Change of User Requirement:</b> If an Object in the User Requirements module, the design team can quickly identify the System Requirement, Design, and Test Plan modules which must be updated in response.</li>
+     </ul>
+     <img src="..\images\Links.png" alt="Links">
+     <p>
+        The last example leads to the final functionality of DOORS: Change Tracking.  DOORS offers more than a simple binary (changed or not changed) change tracker.  This functionality creates the collaborative portion of requirements control.
+     </p>
+  </div>
+
+  <div id="footer">
+     CSCI 5828, Fall 2015 - Presentation 2 - Bradley Brisnehan
+  </div>
+</body>
+</html>

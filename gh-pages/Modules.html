@@ -12,6 +12,13 @@
        color:white
     }
 
+    img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
     #header
     {
        font-family: Verdana, "Bitstream Vera Sans", sans-serif;
@@ -74,10 +81,20 @@
   </div>
 
   <div id="section">
-     <h2>References</h2>
+     <h2>Modules</h2>
      <p>
-        
+        Once requirements have been defined, they must be organized in a logical / usable manner.  DOORS organizes requirement information as a set of modules and links among them.  This allows information to be tracked throughout project at different levels.  Common modules within DOORS are:
      </p>
+     <ul>
+        <li><b>User Requirements</b> define the features and functionality that the user has requested.  These requirements define the problem domain.</li>
+        <li><b>System Requirements</b> define the requirements in a testable / verifiable manner.  These requirements define the solution domain.</li>
+        <li><b>Design</b> defines the structure of the final solution.  The design should thoroughly satisfy System Requirements.  Design features not linked to System Requirements lead to higher time and monetary costs.</li>
+        <li><b>Test Plans</b> define the method for verifying that the Design satisfies the System Requirements.</li>
+     </ul>
+     <p>
+        Each module is then subdivided into Objects and Attributes.  Attributes of the module is information such as <i>Created By</i> or <i>Modified On</i>.  Objects are hierarchical tree which defines the detail of the module structure.  Two basic columns of each Object is the heading and text - which is displayed to allow quick navigation through the Object tree.  The user can define additional columns including priorty, time, monetary cost, among others.
+     </p>
+     <img src="..\images\Modules.png" alt="Modules">
   </div>
 
   <div id="footer">

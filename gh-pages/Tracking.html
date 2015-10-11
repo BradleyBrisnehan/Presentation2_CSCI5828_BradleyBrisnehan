@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    a:link
+    {
+       color:white
+    }
+    a:visited
+    {
+       color:white
+    }
+
+    img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    #header
+    {
+       font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+       color:white;
+       text-align:center;
+       padding:5px;
+    }
+    #nav
+    {
+       font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+       line-height:30px;
+       color:white;
+       width:225px;
+       height:550px;
+       float:left;
+       padding:5px;
+    }
+    #section
+    {
+       font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+       color:white;
+       width:1000px;
+       float:left;
+       padding:10px;
+    }
+    #footer
+    {
+       font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+       font-style: italic;
+       color:white;
+       clear:both;
+       text-align:center;
+       padding:5px;
+    }
+  </style>
+</head>
+
+<body bgcolor="#4a525a">
+  <div id="header">
+     <h1>IBM Rational DOORS</h1>
+  </div>
+
+  <div id="nav">
+     <h><u><b>Table of Contents:</b></u></h>
+     <p>
+        1.  <a href="Intro.html">Introduction</a><br>
+        2.  <a href="Requirements.html">Requirements</a><br>
+        3.  <a href="Modules.html">Modules</a><br>
+        4.  <a href="Links.html">Links</a><br>
+        5.  <a href="Tracking.html">Change Tracking</a><br>
+        6.  <a href="Together.html">Putting It Together</a><br>
+        7.  <a href="Users.html">Users</a><br>
+        8.  <a href="Views.html">Views</a><br>
+        9.  <a href="Trial.html">Trial Download</a><br>
+        10.  <a href="Tutorial.html">Basic Tutorial</a><br>
+        11.  <a href="Conclusion.html">Conclusion</a><br>
+        <br>
+        <a href="References.html">References</a><br>
+     </p>
+  </div>
+
+  <div id="section">
+     <h2>Change Tracking</h2>
+     <p>
+        In a collaborative environment, all users must be able to view the information of interest to them with only certain individuals being able to edit the content.  DOORS defines the following edit modes:
+     </p>
+     <ul>
+        <li><b>Read-Only</b> access allows the user to view a module, without the ability to edit content.</li>
+        <li><b>Exclusive</b> access allows one user to edit a module, while all other users can only view it.</li>
+        <li><b>Shareable</b> access allows multiple users to concurrently edit a module.  Users cannot edit the same Attribute or Object at the same time.</li>
+     </ul>
+     <p>
+        A status bar at the bottom of the window indicates the edit mode currently employed.  The user can change to any edit mode (which policies allow them to) for the given module.
+     </p>
+     <p>
+        DOORS maintains a "revision of record" style database.  This means that when an Object is changed, DOORS will record information concerning when the change was made, the old object, and the new object.  This allows users to track through changes over time to understand what requirements were prviously and how they have evolved.  DOORS has the following change states:
+     </p>
+     <ul>
+        <li><b>New Object:</b> The Object has been created during the current session but has not been saved.</li>
+        <li><b>Unsaved Changes:</b> The Object has been edited during the current session but has not been saved.</li>
+        <li><b>Baseline:</b> The object has not been edited since the last baseline.  A baseline is a read-only "snapshot" of a module taken at a milestone.</li>
+        <li><b>Modified and Saved Since Baseline</b> The object has been modified and saved since the last baseline.</li>
+        <li><b>Deleted</b> The object has been deleted.</li>
+     </ul>
+     <p>
+        The change state is indicated by a change bar along with a tooltip providing additional detail.  If more detail is required beyond the change bar and tooltip, the user can view the detailed history of the module.  All of this functionality makes it very easy for users to collaborate and understand the evolution throughout the software life cycle.
+     </p>
+     <p>
+        Finally, individuals inside and outside of the organization can review the structure of requirements in DOORS and use a Change Proposal System to make requests.  Each request must be reviewed by a Change Review Board to determine if further consideration and integration of the changes must be completed.  Two proposals are possible in the system:
+     </p>
+     <ul>
+        <li><b>Suggestions</b> are a high-level input for the structure of the requirements.  This input requires the team to determine the details of the actual implementation.</li>
+        <li><b>Change Proposals</b> are detailed inputs concerning a specific object.  this input defines the specific change and must be discussed further if a different change is implemented.</li>
+     </ul>
+     <p>
+        All of these change methods allow for a dynamic level of collaboration among users, designers, managers and more.  
+     </p>
+  </div>
+
+  <div id="footer">
+     CSCI 5828, Fall 2015 - Presentation 2 - Bradley Brisnehan
+  </div>
+</body>
+</html>

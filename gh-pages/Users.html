@@ -74,9 +74,18 @@
   </div>
 
   <div id="section">
-     <h2>References</h2>
+     <h2>Users</h2>
      <p>
-        
+        To control collaboration and allow separation of responsibilities, DOORS allows the definition of user roles.  The following standard user roles exist:
+     </p>
+     <ul>
+        <li><b>Standard Users</b> can create and modify objects within modules.  These users cannot archive data, create new users or user groups, or assign users to a specific group.</li>
+        <li><b>Project Managers</b> can partition and archive data, create new user groups, and assign or remove users from a specific user group.  These users cannot create new users.</li>
+        <li><b>Database Managers</b> can do everything a Project Manager can in addition to creating new projects and users.</li>
+        <li><b>Custom Users</b> can have any combination of capabilities as defined by the Database Manager.  This allows group responsibilities specific to the current project or business area.</li>
+     </ul>
+     <p>
+        Segregation into groups, allow the development of tailored views so that specific users only see pertinent information in a clean / concise manner.
      </p>
   </div>
 
