@@ -12,13 +12,6 @@
        color:white
     }
 
-    img
-    {
-        display: block;
-        margin-left: auto;
-        margin-right: auto
-    }
-
     #header
     {
        font-family: Verdana, "Bitstream Vera Sans", sans-serif;
@@ -94,14 +87,17 @@
         A status bar at the bottom of the window indicates the edit mode currently employed.  The user can change to any edit mode (which policies allow them to) for the given module.
      </p>
      <p>
-        DOORS maintains a "revision of record" style database.  This means that when an Object is changed, DOORS will record information concerning when the change was made, the old object, and the new object.  This allows users to track through changes over time to understand what requirements were prviously and how they have evolved.  DOORS has the following change states:
+        DOORS maintains a "revision of record" style database.  This means that when an Object is changed, DOORS will record information concerning when the change was made, the old object, and the new object.  This allows users to track through changes over time to understand what requirements were previously and how they have evolved.  In addition, DOORS defines baselines as a read-only module "snapshot."  These can be used to mark a major milestone in the project life-cycle.
+     </p>
+     <p>
+        DOORS has the following change states:
      </p>
      <ul>
-        <li><b>New Object:</b> The Object has been created during the current session but has not been saved.</li>
-        <li><b>Unsaved Changes:</b> The Object has been edited during the current session but has not been saved.</li>
-        <li><b>Baseline:</b> The object has not been edited since the last baseline.  A baseline is a read-only "snapshot" of a module taken at a milestone.</li>
-        <li><b>Modified and Saved Since Baseline</b> The object has been modified and saved since the last baseline.</li>
-        <li><b>Deleted</b> The object has been deleted.</li>
+        <li><img src="..\images\NewObject.png" alt="Links" style="float:left;width:15px;height:15px;"><b>&nbspNew Object:</b> The Object has been created during the current session but has not been saved.</li>
+        <li><img src="..\images\UnsavedObject.png" alt="Links" style="float:left;width:15px;height:15px;"><b>&nbspUnsaved Changes:</b> The Object has been edited during the current session but has not been saved.</li>
+        <li><img src="..\images\BaselineObject.png" alt="Links" style="float:left;width:15px;height:15px;"><b>&nbspBaseline:</b> The Object has not been edited since the last baseline.</li>
+        <li><img src="..\images\SavedObject.png" alt="Links" style="float:left;width:15px;height:15px;"><b>&nbspModified and Saved Since Baseline</b> The object has been modified and saved since the last baseline.</li>
+        <li><img src="..\images\DeletedObject.png" alt="Links" style="float:left;width:15px;height:15px;"><b>&nbspDeleted</b> The object has been deleted.</li>
      </ul>
      <p>
         The change state is indicated by a change bar along with a tooltip providing additional detail.  If more detail is required beyond the change bar and tooltip, the user can view the detailed history of the module.  All of this functionality makes it very easy for users to collaborate and understand the evolution throughout the software life cycle.
